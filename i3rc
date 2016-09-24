@@ -1,0 +1,9 @@
+#!/bin/bash
+
+xset -dpms
+xset s off
+
+while true; do
+  rm -rf ~/.{config,cache}/chromium/
+  chromium-browser --kiosk --no-first-run  'http://www.yahoo.com'
+done
